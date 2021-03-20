@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="./css/style.css" />
+		<link rel="stylesheet" type="text/css" href="./css/button.css" />
+		<link id="favicon" rel="icon" href="https://image.winudf.com/v2/image/Y29tLnpoZW5ncGluZy5nb2dhbWVfaWNvbl8xNTExNjE5MDM0XzA0Mg/icon.png?w=170&fakeurl=1"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<script src="./ts/script.ts"></script>
+		<title>Gomoku Telegram</title>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	</head>
+	
+	<body class="disable-select">
+		<div id="loading-screen">
+			<div id="loader-wrapper">
+				<div id="loader"></div>
+			</div>
+		</div>
+
+		<div class="profile-box opponent">
+			<img style="float: right;" class="user-photo" id="photo_top" src="https://firebasestorage.googleapis.com/v0/b/gomoku-telegram.appspot.com/o/unkown.jpg?alt=media&token=a5b79c36-23bd-4f8e-8b02-e2c513f3a1d0"></img>
+			<div style="float: right; position: relative; top: 15%; left: -1.5%;" class="user-info" id="user-info-top">
+				<div class="name" id="player_name_top">Waiting...</div>
+				<br>
+				<div class="status-text" id="player_id_top"></div>
+            </div>
+		</div>
+
+        <div id="stripe" class="background-stripe"></div>
+
+        <div class="profile-box user">
+            <img style="float: left;" class="user-photo" id="photo_bottom" src="https://firebasestorage.googleapis.com/v0/b/gomoku-telegram.appspot.com/o/unkown.jpg?alt=media&token=a5b79c36-23bd-4f8e-8b02-e2c513f3a1d0"></img>
+            <div class="user-info" style="float: left; display: contents; width: 100%;" id="user-info-bottom">
+                <div class="status-text" id="player_id_bottom" style="margin-top: 1.65vh;">Offline</div>
+                <br>
+                <div class="name" id="player_name_bottom">...</div>
+            </div>
+        </div>
+
+		<div class="board">
+            <span id="color-texts-top" class="player-color-text-top" style="color: var(--white);">
+                <span style="padding-left: 40%; font-weight: 500; font-size: min(3vw, 30px); line-height: 2rem; position: absolute;">playing</span><br>
+                <span id="color-top-1" style="font-weight: 800; font-size: min(10vw, 100px); line-height: 0px; letter-spacing: max(-0.5vw, -2px)">B</span>
+                <span id="color-top-2" style="font-weight: 800; font-size: min(7vw, 70px);">LACKS</span>
+            </span>
+
+			<div class="board-playfield" id="b">
+				<span class="circle"></span>
+            </div>
+            
+            <span id="color-texts-bottom" style="position: absolute; top: 103%; left: 71%; transform: rotate(9.08deg); color: var(--black);">
+			    <span style="padding-left: 10px; font-family: Montserrat; font-weight: 550; font-size: min(3vw, 30px);">playing</span><br>
+                <span id="color-bottom" style="font-family: Montserrat; font-weight: 800; font-size: min(6.5vw, 70px); line-height: min(4vw, 45px);">BLACKS</span>
+            </span>
+            
+            <input type="checkbox" id="c">
+                <label for="c"><br>Your turn!</label>
+            </input>
+        </div>
+
+        <!-- <img class="star" src="images/star.svg">
+            <span class="winner-text"><span style="font-size: min(20vw, 12vh);">W</span>INNER</span>
+        </img>
+        
+        <div style="transform: rotate(-27deg)">
+            <p class="marquee">
+              <span>LUCAS || LUCAS || LUCAS || LUCAS || LUCAS || LUCAS || LUCAS || LUCAS || LUCAS || LUCAS || LUCAS || LUCAS ||&nbsp;</span>
+            </p>
+            <p class="marquee marquee2">
+              <span>LUCAS || LUCAS || LUCAS || LUCAS || LUCAS || LUCAS || LUCAS || LUCAS || LUCAS || LUCAS || LUCAS || LUCAS ||&nbsp;</span>
+            </p>
+        </div> -->
+        
+		<!-- <button class="confirm-box" id="p">
+			Pass
+		</button> -->
+		
+		<!-- <span>
+			<span class="playing-text-bottom small blacks">Playing </span>
+			<span class="playing-text-bottom large blacks">BL</span>
+		</span> -->
+
+		<!-- <div>
+			<footer>Made with <span style="color: rgb(219, 60, 60)">❤</span> by Kite</footer>
+		</div>  -->
+	</body>
+</html>

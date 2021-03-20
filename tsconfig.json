@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+	"module": "commonjs",
+	"moduleResolution": "node",
+	"newLine": "LF",
+	"outDir": "./lib/",
+	"target": "es5",
+	"sourceMap": true,
+	"declaration": true,
+	"jsx": "preserve",
+	"lib": [
+	  "es2017",
+	  "dom"
+	],
+	"strict": true,
+	"noUnusedLocals": false,
+	"noUnusedParameters": false,
+	"noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "strictNullChecks": false,
+	"pretty": true,
+  },
+  "include": [
+	"src/**/*"
+  ],
+  "exclude": [
+	".git",
+	"node_modules"
+  ]
+}
