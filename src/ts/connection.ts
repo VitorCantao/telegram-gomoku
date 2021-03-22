@@ -10,6 +10,7 @@ import { ActionParser } from "./Action/action-parser";
 // Types
 import { Coordinates } from "./Logic/Board/coordinates"
 import { Event } from "./Events/events";
+import { ConversionUtilities } from "../conversion-utilities";
 
 type playObject = {
 	coordinates: Coordinates,
@@ -75,7 +76,7 @@ export class Connection
 		this.socket.onopen = () => { 
 			this.socket.send(JSON.stringify({
 				"type": "room_request",
-				"data": atob((window.location.search).substr(1)) // Decode base64. Must remove the first character "?"
+				"data": ConversionUtilities.b64ToUtf8((window.location.search).substr(1)) // Decode base64. Must remove the first character "?"
 			}));
 			
 			console.log('connected');
