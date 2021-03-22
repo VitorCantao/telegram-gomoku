@@ -1,10 +1,13 @@
-## Telegram-Gomoku
+# Telegram Gomoku 
+
+[![Telegram Badge](https://img.shields.io/badge/Click_me-Telegram_Bot-blue.svg)](https://t.me/KiteGamesBot)
+
 [Gomoku](https://en.wikipedia.org/wiki/Gomoku "Gomoku"), also known as "Connect-5" or "Five in a row", is a traditional two-player strategy board game. This is the web client for a simple online version of gomoku we made for the Telegram instant messenger. It was our first web project and our first finished, personal project game that took longer than a day to build, so we are rather proud. 🥳
 
 ### Screenshots
 |![](https://imgur.com/RRQ4NWl.png)  | ![](https://i.imgur.com/MEH34VD.png)  |
 | :------------: | :------------: |
-| Screenshot of the game on mobile  | The same game on desktop, as seen by the opponent  |
+| Screenshot of the game on mobile  | Screenshot of the game on desktop  |
 
 ### Tools used
 - Client built on HTML, CSS and TypeScript;
